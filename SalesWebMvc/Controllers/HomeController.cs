@@ -12,27 +12,12 @@ namespace SalesWebMvc.Controllers
     {
         public IActionResult Index()
         {
-            return View();
-        }
 
-        public IActionResult About()
-        {
             ViewData["Message"] = "Salles Web MVC App from C# Course";
             ViewData["Email"] = "aadsj.alexandre@gmail.com";
             return View();
         }
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
